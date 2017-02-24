@@ -3,6 +3,7 @@
 
 
 set textwidth=80
+set colorcolumn=150
 set expandtab
 
 set softtabstop=4
@@ -16,7 +17,8 @@ endfu
 com! WP call WordProcessorMode()
 
 syntax on
-colorscheme monokai
+
+colorscheme minimalist
 set t_Co=256
 
 
@@ -52,7 +54,7 @@ set nobackup
 set noswapfile
 
 if &t_Co >= 256 || has("gui_running")
-    colorscheme mustang
+    colorscheme minimalist	
 endif
 
 if &t_Co > 2 || has("gui_running")

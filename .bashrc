@@ -118,17 +118,6 @@ fi
 
 
 
-export WORKON_HOME=/home/arpit/.virtualenvs
-source ~/.local/bin/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=/home/arpit/.virtualenvs
-export WORKON_HOME=/home/arpit/.virtualenvs
-source ~/.local/bin/virtualenvwrapper.sh
-export WORKON_HOME=/home/arpit/.virtualenvs
-source ~/.local/bin/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=/home/arpit/.virtualenvs
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 
 
