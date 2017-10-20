@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/arpit/github/SRM-PPI/prioritization_methods/rwr/filtered_datasets'
+let g:netrw_dirhist_2='/home/arpit/github/SRM-PPI/prioritization_methods/rwr/randomize/degrees'
+let g:netrw_dirhist_3='/home/arpit/github/SRM-PPI/prioritization_methods/rwr/components/result'
+let g:netrw_dirhist_4='/home/arpit/github/library-management'
