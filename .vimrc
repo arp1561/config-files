@@ -18,7 +18,7 @@ com! WP call WordProcessorMode()
 
 syntax on
 
-colorscheme minimalist
+colorscheme monokai
 set t_Co=256
 
 
@@ -27,7 +27,6 @@ let mapleader=","
 set hidden
 
 set nowrap        " don't wrap lines
-set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start
                     " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
@@ -54,7 +53,7 @@ set nobackup
 set noswapfile
 
 if &t_Co >= 256 || has("gui_running")
-    colorscheme minimalist	
+    colorscheme monokai	
 endif
 
 if &t_Co > 2 || has("gui_running")
@@ -67,3 +66,8 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 set relativenumber
+augroup cpp
+    au BufNewFile *.cpp 0r ~/.vim/skeleton.cpp
+augroup end
+nnoremap <F9> : !g++ -std=c++14 % && ./a.out <CR>
+
